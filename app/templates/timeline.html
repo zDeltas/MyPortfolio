@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/timeline/timeline.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container" id="timeline">
+    <div class="header">
+        <h2 class="header-title">LE BORGNE</h2>
+        <h3 class="header-subtitle">LIFE's</h3>
+    </div>
+    <div class="timeline">
+
+        <div class="item" data-text="Stage Ens-PSMN">
+            <div class="content"><img class="content-img" src="{{url_for('static', filename = 'images/timeline/psmn.png')}}" />
+                <h2 class="content-title">January - March 2021</h2>
+                <p class="content-short">My mission during the internship was to make available a web interface to display statistics in graphic form.</p>
+            </div>
+        </div>
+
+        <div class="item" data-text="Pizza delivery at Pizza Cosy">
+            <div class="content"><img class="content-img" src="{{url_for('static', filename = 'images/timeline/cosy.png')}}" />
+                <h2 class="content-title">Nov 2020 - Today</h2>
+                <p class="content-short">In parallel to my studies, I started a new job as a pizza delivery boy. For this job, you have to be fast and know how to manage your time.</p>
+            </div>
+        </div>
+
+        <div class="item" data-text="EPSI School">
+            <div class="content"><img class="content-img" src="{{url_for('static', filename = 'images/timeline/epsi.png')}}" />
+                <h2 class="content-title">2019 - Today</h2>
+                <p class="content-short">I entered this school because I was interested in the course, the fact of being able to do an alternation by my 3rd year.</p>
+            </div>
+        </div>
+
+        <div class="item" data-text="Seller at TURIN&ASSOCIES">
+            <div class="content"><img class="content-img" src="{{url_for('static', filename = 'images/timeline/turin.png')}}" />
+                <h2 class="content-title">April 2019 - Feb 2020</h2>
+                <p class="content-short">I worked in the sale of fruits and vegetables in parallel with studying in college, it allowed me to have a remuneration and also to discover the professional world.</p>
+            </div>
+        </div>
+
+        <div class="item" data-text="Martiniere Monplaisir High School">
+            <div class="content"><img class="content-img" src="{{url_for('static', filename = 'images/timeline/martinieremonplaisir.png')}}" />
+                <h2 class="content-title">2014-2018</h2>
+                <p class="content-short">I did a bac sti2d sin, which allowed me to learn the basics of computer science from the class of premiere, which reinforced my desire to work in the computer industry.</p>
+            </div>
+        </div>
+
+        <div class="item" data-text="Pablo Picasso Middle School">
+            <div class="content"><img class="content-img" src="{{url_for('static', filename = 'images/timeline/pablopicasso.png')}}" />
+                <h2 class="content-title">2010-2014</h2>
+                <p class="content-short">I have done from the 6th to the 3rd year at the college peblo picasso to obtain my college certificate.</p>
+            </div>
+        </div>
+
+        <div class="item upArrow">
+            <div class="content"><img class="content-img" src="{{url_for('static', filename = 'images/timeline/up.png')}}" />
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block javascript %}
+<script src="{{ url_for('static', filename='js/timeline.js') }}"></script>
+<script>
+    $("#timeline").timeline();
+</script>
+{% endblock %}

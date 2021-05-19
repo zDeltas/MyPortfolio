@@ -1,0 +1,169 @@
+/* ##########
+    TIMELINE
+   ########## */
+
+.timeline {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 700px;
+  position: relative;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  content: "";
+  background: var(--pColor);
+}
+
+
+/* ########
+    HEADER
+   ######## */
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.header-title {
+  color: var(--titleColor);
+  font-size: 46px;
+  font-family: Cardo;
+  font-weight: normal;
+  margin: 0;
+}
+
+.header-subtitle {
+  color: var(--subTitleColor);
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 16px;
+  letter-spacing: 5px;
+  margin: 10px 0 0 0;
+  font-weight: normal;
+}
+
+/* ######
+    ITEM
+   ###### */
+
+.item {
+  height: 500px;
+  padding: 40px 0;
+  opacity: 0.3;
+  filter: blur(2px);
+  transition: 0.5s;
+  box-sizing: border-box;
+  width: calc(50% - 40px);
+  display: flex;
+  position: relative;
+  transform: translateY(-120px);	
+}
+
+.item:before {
+  content: attr(data-text);
+  letter-spacing: 2px;
+  width: 100%;
+  position: absolute;
+  color: var(--pColor);
+  font-size: 20px;
+  top: 70%;
+  margin-top: -5px;
+  padding-left: 15px;
+  opacity: 0;
+  right: calc(-100% - 56px);
+}
+
+.item:nth-child(even) {
+  align-self: flex-end;
+}
+
+.item:nth-child(even):before {
+  right: auto;
+  text-align: right;
+  left: calc(-100% - 56px);
+  padding-left: 0;
+  border-left: none;
+  padding-right: 15px;
+}
+
+.item--active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+}
+
+.item--active:before {
+  top: 50%;
+  transition: 0.3s all 0.2s;
+  opacity: 1;
+}
+
+.item--active .content-title {
+  margin: -50px 0 20px 0;
+}
+
+.upArrow {
+  margin-bottom: 150px;
+}
+
+
+/* #########
+    CONTENT
+   ######### */
+
+.content-title {
+  font-size: 45px;
+  transition: 0.4s;
+  padding: 0 10px;
+  color: var(--titleColor);
+}
+
+.content-short {
+  margin: 0;
+  font-size: 15px;
+  color: var(--pColor);
+}
+
+.content-img {
+  max-width: 100%;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
+}
+
+
+/* ############
+    RESPONSIVE
+   ############ */
+
+@media only screen and (max-width: 768px) {
+    
+  .timeline:before {
+    left: 40px;
+  }
+
+  .item {
+  	align-self: baseline !important;
+  	width: 100%;
+  	padding: 0 30px 150px 80px;
+  }
+
+  .item:before {
+  	left: 10px !important;
+  	padding: 0 !important;
+  	top: 50px;
+  	text-align: center !important;
+  	width: 60px;
+  	border: none !important;
+  }
+
+  .item:last-child {
+  	padding-bottom: 40px;
+  }
+}
