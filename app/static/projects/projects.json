@@ -1,13 +1,14 @@
 {
     "projects" : [
         {
-            "name" : "TP Puissance 4",
-            "brief" : "Le but du tp est de réaliser le jeu du puissance 4 (non graphique), en utilisant les bases du langage C#. L'utilisateur aura la possibilité de jouer contre un autre joueur ou une intelligence artificielle.",
-            "link" : "puissance4",
+            "name" : "Connect 4",
+            "brief" : "The goal of the project is to realize the connect 4 game (non graphical), using the basics of the C# language. The user will have the possibility to play against another player or an artificial intelligence.",
+            "link" : "connect4",
             "date" : "nov 2020",
             "Status" : "Complete",
             "github" : "https://github.com/zDeltas/FlaskTests",
-            "demo" : "demo.gif",
+            "demo" : "projects/connect4/demo.gif",
+            "img" : "projects/connect4/img.png",
             "pos" : 1,
             "tag" : [["C%23", "C#"], ["ia", "IA"]]
         },
