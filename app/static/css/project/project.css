@@ -1,0 +1,71 @@
+.container-fluid { 
+  padding-top: 50px
+}
+
+
+/* ######
+    DEMO
+   ###### */
+
+.demo-container {
+  margin: auto;
+  text-align: center;
+}
+
+.demo-container #demo {
+  border: 1px solid red;
+}
+
+
+/* #################
+    PROJECT-CONTENT
+   ################# */
+
+.project-content{
+  margin: auto;
+  color: var(--titleColor);
+}
+
+.explanation{
+  margin-top: 20px;
+  width: 75%;
+}
+
+
+/* #######
+    LINKS
+   ####### */
+
+.links .text-title {
+  font-family: "Monaco", "Inconsolata", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--titleColor);
+}
+
+.links a:hover   {
+  opacity: 0.4;
+  filter: alpha(opacity=60);
+  text-decoration:none;
+}
+
+.links .title-logo{
+  height:30px;
+  width:30px;
+  vertical-align:top;
+}
+
+
+/* #####
+    SVG
+   ##### */
+
+.title-logo{
+  height:30px;
+  width:30px;
+  margin: 0px 5px 0px 2px;
+}
+
+.st0{
+  fill: var(--svgColor);
+}

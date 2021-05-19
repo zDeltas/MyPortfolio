@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css') }}">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/projects/projects.css') }}">
+
+{% endblock %}
+
+
+{% block body %}
+<div class="container">
+
+    <div class="row">
+        <div class="align-self-center">
+            <h3 class="filters-container">Filters: </h3>
+        </div>
+        <div class="Chip-container">
+            {% if tagUser is not none %}
+            <div class="chip chip-md">
+                <a class="md-chip-link" href="/projects">{{tagUser}}</a>
+                <div class="close">
+                    <a href="/projects" class="md-chip-remove-span">
+                        <svg class="chip-svg" focusable="false" aria-hidden="true">
+                            <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Tags
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <input class="form-control" id="searchByTags" type="text" placeholder="Search...">
+            {% for tag in tags %}
+            <a href="/projects?tags={{tag[0]}}" class="dropdown-item">{{tag[1]}}</a>
+            {% endfor %}
+
+        </div>
+    </div>
+
+    <div class="cards-container">
+        <div class="row mt-5 justify-content-center">
+            {% for project in projects %}
+            {% include "card.html" %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block javascript %}
+<!-- mCustomScrollbar -->
+<script src="{{ url_for('static', filename='vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+<!-- Bootstrap JS + Popper -->
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/projects.js') }}"></script>
+
+
+
+
+
+{% endblock %}
