@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-md demo-container">
             {% if project['demo'].endswith('.gif') %}
-            <img id="demo" src="{{ url_for('static', filename = 'projects/puissance4/demo.gif') }}"
+            <img id="demo" src="{{ url_for('static', filename = project['demo']) }}"
                 alt="Demo puissance4" width="600" />
             {% endif %}
         </div>

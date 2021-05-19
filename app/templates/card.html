@@ -1,9 +1,9 @@
 <div class="card card-default">
 
-    {% if pic in project %}
-    <img src="{{ url_for('static', filename = 'projects/puissance4/img.png') }}">
+    {% if "img" in project %}
+    <img src="{{ url_for('static', filename = project['img']) }}">
     {% else %}
-    <img src="{{ url_for('static', filename = 'projects/puissance4/img.png') }}">
+    <img src="{{ url_for('static', filename = 'projects/no-img.jpg') }}">
     {% endif %}
 
     <div class="info">
