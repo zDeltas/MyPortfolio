@@ -1,0 +1,41 @@
+<div class="card card-default">
+
+    {% if pic in project %}
+    <img src="{{ url_for('static', filename = 'projects/puissance4/img.png') }}">
+    {% else %}
+    <img src="{{ url_for('static', filename = 'projects/puissance4/img.png') }}">
+    {% endif %}
+
+    <div class="info">
+        <div class="title">
+            <h2>{{project['name']}}</h2>
+        </div>
+        <div class="hidenInfo">
+            <div class="date">
+                {{project['date']}}
+            </div>
+            <div class="brief">
+
+                {% if project["tag"]|length > 1 %}
+                Tags:
+                {% else %}
+                Tag:
+                {% endif %}
+
+                {% for tags in project["tag"] %}
+                <div class="chip chip-md">
+                    <a class="md-chip-link" href="/projects?tags={{tags[0]}}">{{tags[1]}}</a>
+                </div>
+                {% endfor %}
+
+                <p>{{project['brief']}}</p>
+            </div>
+            <div class="links">
+                <a href="/projects/{{project['link']}}" class="rmLink">Read more</a>
+                {% if 'github' in project %}
+                <a href="{{project['github']}}" class="exLinks">Github</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
