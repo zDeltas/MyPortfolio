@@ -1,0 +1,41 @@
+/* ######
+    BODY
+   ###### */
+
+body {
+  height:100vh;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-transition: background-color 150ms ease-out !important;
+	transition: background-color 150ms ease-out !important;
+}
+
+body { 
+  background: url("../../images/background.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body.dayBackground {
+	background: #FFF;
+}
+
+
+/* #############
+    FORMAT-TEXT
+   ############# */
+  
+:root {
+  --pColor: rgb(180, 180, 180);
+  --titleColor: rgb(255, 255, 255);
+  --subTitleColor: rgb(255, 255, 255);
+  --aColor: rgb(255, 255, 255);
+  --aColorHover: rgb(255, 255, 255);
+  --svgColor: rgb(255, 255, 255);
+}
+
+h1{
+  font-family: "Monaco", "Inconsolata", Courier, monospace;
+  font-weight: bold;   
+}

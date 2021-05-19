@@ -1,0 +1,7 @@
+body { 
+    background: url("../../images/404/404.gif") no-repeat center center fixed; 
+}
+
+body.dayBackground {
+	background: url("../../images/404/404.gif") no-repeat center center fixed; 
+}
