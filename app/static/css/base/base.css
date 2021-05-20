@@ -27,11 +27,11 @@ body.dayBackground {
    ############# */
   
 :root {
-  --pColor: rgb(180, 180, 180);
-  --titleColor: rgb(255, 255, 255);
-  --subTitleColor: rgb(255, 255, 255);
-  --aColor: rgb(255, 255, 255);
-  --aColorHover: rgb(255, 255, 255);
+  --pColor: #b4b4b4;
+  --titleColor: #ffffff;
+  --subTitleColor: #8f8f8f;
+  --aColor: #ffffff;
+  --aColorHover: #ffffff;
   --svgColor: rgb(255, 255, 255);
 }
 
