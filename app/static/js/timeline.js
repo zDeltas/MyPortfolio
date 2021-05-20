@@ -22,7 +22,7 @@
                 }else if($(window).scrollTop() + $(window).height() > $(document).height()-10) {
                     cursor.item.removeClass(cursor.activeItem);
                     cursor.item.last().addClass(cursor.activeItem);
-                    window.scroll({top: 0, behavior: "smooth"})
+                    // window.scroll({top: 0, behavior: "smooth"})
                 }
 
             });
