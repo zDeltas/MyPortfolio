@@ -83,7 +83,8 @@
 }
 
 .text-content {
-  margin:20px 0px 20px 0px;
+  margin: 18px 0px 20px 0px;
+  font-size: 18px;
   color: var(--pColor);
 }
 
