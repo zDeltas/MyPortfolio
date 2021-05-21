@@ -4,42 +4,49 @@
             "name" : "Connect 4",
             "brief" : "The goal of the project is to realize the connect 4 game (non graphical), using the basics of the C# language. The user will have the possibility to play against another player or an artificial intelligence.",
             "link" : "connect4",
-            "date" : "nov 2020",
+            "date" : "Nov 2020",
             "Status" : "Complete",
             "github" : "https://github.com/zDeltas/Puissance4-C-Sharp",
             "demo" : "projects/connect4/demo.gif",
-            "img" : "projects/connect4/img.png",
-            "pos" : 1,
+            "img" : "img.jpg",
+            "pos" : 3,
             "tag" : [["C%23", "C#"], ["ia", "IA"]]
         },
         {
-            "name" : "Project 2",
-            "brief" : "Presentation du projet 2 uisdhfiuhsdfuhdsfhsdhf dhufisdhfsdhfuhsdlkjfhsdf sdufdsfduh uisdhfiuhsdfuhdsfhsdhf dhufisdhfsdhfuhsdlkjfhsdf sdufdsfduh uisdhfiuhsdfuhdsfhsdhf dhufisdhfsdhfuhsdlkjfhsdf sdufdsfduh",
-            "link" : "project2",
-            "date" : "04/05/2021",
+            "name" : "MasterMind",
+            "brief" : "Mastermind is a game for two players whose goal is to find a code (color and position of 4 pieces) in 12 moves. In this project the computer will generate a combination. The goal for the human player is to find this combination. (on a console)",
+            "link" : "mastermind",
+            "date" : "Oct 2020",
             "Status" : "Complete",
-            "github" : "https://github.com/zDeltas/FlaskTests",
-            "pos" : 2,
-            "tag" : [["C%23", "C#"]]
-        },
-        {
-            "name" : "Project 3",
-            "brief" : "Presentation du projet 3",
-            "link" : "project3",
-            "date" : "04/05/2021",
-            "Status" : "Complete",
-            "pos" : 3,
-            "tag" : [["C%23", "C#"], ["C%2B%2B", "C++"]]
-        },
-        {
-            "name" : "Project 4",
-            "brief" : "Presentation du projet 4",
-            "link" : "project4",
-            "date" : "04/05/2021",
-            "Status" : "Complete",
+            "github" : "https://github.com/zDeltas/MasterMind",
+            "demo" : "projects/MasterMind/demo.gif",
+            "img" : "img.jpg",
             "pos" : 4,
-            "tag" : [["C%23", "C#"]]
-        }
-        
+            "tag" : [["C%2B%2B", "C++"]]
+        },
+        {
+            "name" : "My Portfolio",
+            "brief" : "For my diploma of higher technician I had to realize a portfolio, where I make a brief presentation of myself.  And where I also present projects that I could realize, either in the framework of my school, or for me.",
+            "link" : "portfolio",
+            "date" : "May 2021",
+            "Status" : "Complete",
+            "github" : "https://github.com/zDeltas/MyPortfolio",
+            "demo" : "projects/portfolio/demo.gif",
+            "img" : "img.jpg",
+            "pos" : 1,
+            "tag" : [["python", "Python"], ["flask", "Flask"]]
+        },
+        {
+            "name" : "ChartAccounting",
+            "brief" : "For my diploma of higher technician I had to realize a portfolio, where I make a brief presentation of myself.  And where I also present projects that I could realize, either in the framework of my school, or for me.",
+            "link" : "chartaccounting",
+            "date" : "Jan 2021",
+            "Status" : "in progress",
+            "github" : "https://github.com/zDeltas/ChartAccounting",
+            "demo" : "projects/chartaccounting/demo.jpg",
+            "img" : "img.jpg",
+            "pos" : 2,
+            "tag" : [["python", "Python"], ["flask", "Flask"]]
+        }     
     ]
 }
