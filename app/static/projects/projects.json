@@ -19,7 +19,7 @@
             "date" : "Oct 2020",
             "Status" : "Complete",
             "github" : "https://github.com/zDeltas/MasterMind",
-            "demo" : "projects/MasterMind/demo.gif",
+            "demo" : "projects/mastermind/demo.gif",
             "img" : "img.jpg",
             "pos" : 4,
             "tag" : [["C%2B%2B", "C++"]]
