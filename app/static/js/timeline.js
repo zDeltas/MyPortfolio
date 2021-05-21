@@ -8,11 +8,10 @@
         };
         cursor.item.eq(0).addClass(cursor.activeItem);
 
-        var itemLength = cursor.item.length;
         $(window).scroll(function () {
             var max, min;
             var pos = $(this).scrollTop();
-            cursor.item.each(function (i) {
+            cursor.item.each(function () {
                 min = $(this).offset().top;
                 max = $(this).height() + $(this).offset().top;
 

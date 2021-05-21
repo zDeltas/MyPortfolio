@@ -1,7 +1,7 @@
 <div class="card card-default">
 
     {% if "img" in project %}
-    <img src="{{ url_for('static', filename = project['img']) }}">
+    <img src="{{ url_for('static', filename = 'projects/' + project['link'] +'/' + project['img']) }}">
     {% else %}
     <img src="{{ url_for('static', filename = 'projects/no-img.jpg') }}">
     {% endif %}

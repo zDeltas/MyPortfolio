@@ -56,6 +56,7 @@
 .text-title {
   margin:0px;
   color: var(--titleColor);
+  transition: 0.3s all 0.2s;
 }
 
 .title-logo{
