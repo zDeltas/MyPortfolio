@@ -1,7 +1,7 @@
 let theme = 0
 
 function day(){
-    document.documentElement.style.setProperty('--pColor', '#595959');
+    document.documentElement.style.setProperty('--pColor', '#242424');
     document.documentElement.style.setProperty('--titleColor', '#000000');
     document.documentElement.style.setProperty('--subTitleColor', '#666666');
     document.documentElement.style.setProperty('--aColor', '#000000');

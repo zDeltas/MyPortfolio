@@ -2,15 +2,8 @@
     BODY
    ###### */
 
-body {
-  height:100vh;
-  font-family: 'Open Sans', sans-serif;
-  -webkit-transition: background-color 150ms ease-out !important;
-	transition: background-color 150ms ease-out !important;
-}
-
 body { 
-  background: url("../../images/background.png") no-repeat center center fixed; 
+  background: url("../../images/background.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -37,5 +30,5 @@ body.dayBackground {
 
 h1{
   font-family: "Monaco", "Inconsolata", Courier, monospace;
-  font-weight: bold;   
+  font-weight: bold;
 }
