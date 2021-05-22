@@ -2,7 +2,7 @@
 
 ### Introduction
 
-I created this [portfolio](d-leborgne.fr/) to showcase some projects, for my advanced technician's certificate. This portfolio is a [Flask](http://flask.pocoo.org/) powered web app.
+I created this [portfolio](https://d-leborgne.fr/) to showcase some projects, for my advanced technician's certificate. This portfolio is a [Flask](http://flask.pocoo.org/) powered web app.
 
 
 ### Tools
