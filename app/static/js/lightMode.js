@@ -26,7 +26,6 @@ function night(){
 
 $( document ).ready(function() {
     var switchLightSaved = localStorage.getItem('switchLight');
-    console.log(switchLightSaved);
     if(switchLightSaved == "day"){
         document.getElementById("switchLight").click();
     }else{
