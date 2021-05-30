@@ -28,7 +28,7 @@
             "name" : "My Portfolio",
             "brief" : "Pour mon diplôme de technicien supérieur, j'ai dû réaliser un portfolio, où je fais une brève présentation de moi-même.  Et où je présente également des projets que j'ai pu réaliser, soit dans le cadre de mon école, soit pour moi.",
             "link" : "portfolio",
-            "date" : "May 2021",
+            "date" : "Mai 2021",
             "Status" : "Complete",
             "github" : "https://github.com/zDeltas/MyPortfolio",
             "demo" : "projects/portfolio/demo.gif",
