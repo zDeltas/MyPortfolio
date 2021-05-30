@@ -1,3 +1,8 @@
+*{
+  transition: 0.3s all;
+}
+
+
 /* ######
     BODY
    ###### */
@@ -8,6 +13,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  transition: 1s all;
 }
 
 body.dayBackground {
@@ -29,7 +35,15 @@ body.dayBackground {
   --svgColor: rgb(255, 255, 255);
 }
 
-h1{
-  font-family: "Monaco", "Inconsolata", Courier, monospace;
-  font-weight: bold;
+
+/* ##############
+    Toggler-icon
+   ############## */
+
+body .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+body.dayBackground .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }

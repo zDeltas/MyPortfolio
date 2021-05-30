@@ -3,8 +3,8 @@ $(function() {
   $(".typed").typed({
     strings: [
       "cat damien.le_borgne<br/>" +
-      "<span class='caret'>$</span> programming skills: Python, C#, C++, Web<br/> ^100" +
-      "<span class='caret'>$</span> hobbies: development, ride a bike, Listen to music<br/> ^300" +
+      "<span class='caret'>$</span> Compétences en programmation: Python, C#, C++, Web<br/> ^100" +
+      "<span class='caret'>$</span> Passions: Développement, Vélo, Ecouter de la musique<br/> ^300" +
       "<span class='caret'>$</span> alias: zDeltas <br/>"
     ],
     showCursor: true,
